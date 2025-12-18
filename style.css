@@ -181,9 +181,12 @@ p.choices-desc {
     list-style: none;
 }
 
-.choices-list ul li span {
+.choices-list ul li a,
+.choices-list ul li span
+ {
     padding-left: 10px;
     font-weight: bold;
+    text-decoration: none;
 
 }
 
@@ -191,16 +194,7 @@ p.choices-desc {
     border-radius: 20px;
 }
 
-.choices-desc-list {
-    box-shadow: 1px 1px 20px #bdcadd;
-    /* height: 30px; */
-    /* width: 50px; */
-    margin: 20px;
-    width: 200px;
-    padding: 10px;
-    height: 70px;
-    font-size: 13px;
-}
+
 
 .agree {
     padding-left: 5px;
@@ -226,3 +220,51 @@ button:hover {
     opacity: 80%;
     font-weight: bold;
 }
+
+
+
+/* POP UP TEXT  (Individual) */
+
+
+li#individual:hover  {
+    cursor: pointer;
+    
+}
+
+
+#individual-display {
+    box-shadow: 1px 1px 20px #bdcadd;
+    /* height: 30px; */
+    /* width: 50px; */
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+    height: 70px;
+    font-size: 13px;
+
+    z-index: 200;
+    display: none;
+    position: relative;
+    /* opacity: 0; */
+
+}
+
+li#individual:hover #individual-display {
+    box-shadow: 1px 1px 20px #bdcadd;
+    /* height: 30px; */
+    /* width: 50px; */
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+    height: 70px;
+    font-size: 13px;
+    transition: 0.3s ease-out;
+
+    z-index: 300;
+    display: block;
+    position: absolute;
+    /* opacity: 1; */
+}
+
+
+
